@@ -11,5 +11,7 @@
 
         <property name="show_sql">true</property>
 
+        <mapping class="edu.bbdd2.Usuario"></mapping>
+
     </session-factory>
 </hibernate-configuration>

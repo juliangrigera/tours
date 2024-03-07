@@ -5,6 +5,14 @@ public class Compra {
     protected Usuario cliente;
     protected float precio;
     
+    public Compra() {
+    }
+    
+    public Compra(Usuario cliente, float precio) {
+        this.cliente = cliente;
+        this.precio = precio;
+    }
+
     public Usuario getCliente() {
         return cliente;
     }
