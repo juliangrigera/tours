@@ -12,6 +12,7 @@
         <property name="show_sql">true</property>
 
         <mapping class="edu.bbdd2.Usuario"></mapping>
+        <mapping class="edu.bbdd2.Compra"></mapping>
 
     </session-factory>
 </hibernate-configuration>

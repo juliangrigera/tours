@@ -34,6 +34,10 @@ public class Usuario {
         this.password = password;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Usuario [id=" + id + ", email=" + email + ", password=" + password + "]";
+    }
+
 
 }
