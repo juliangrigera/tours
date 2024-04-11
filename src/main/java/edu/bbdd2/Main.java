@@ -20,9 +20,12 @@ public class Main {
         Usuario pablo = new Usuario("pablo@bbdd2.edu","p4bl0");
         Usuario ana = new Usuario("ana@bbdd2.edu","4n4");
         Compra compra = new Compra(ana,10000);
+        Item excursion = new Item("Excursión al Lago Escondido", 15000);
 
         Session session = factory.openSession();
         manager.getTransaction().begin();
+        manager.persist(excursion);
+        compra.agregarItem(excursion);
         manager.persist(compra);
         manager.getTransaction().commit();
 

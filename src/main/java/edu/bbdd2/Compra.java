@@ -1,5 +1,7 @@
 package edu.bbdd2;
 
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.*;
 
 @Entity
@@ -13,6 +15,9 @@ public class Compra {
     protected Usuario cliente;
     @Column(name = "precio")
     protected float precio;
+
+    @OneToMany
+ 	protected List<Item> items = new ArrayList<Item>();
     
     public Compra() {
     }
@@ -20,6 +25,10 @@ public class Compra {
     public Compra(Usuario cliente, float precio) {
         this.cliente = cliente;
         this.precio = precio;
+    }
+
+    public void agregarItem(Item item){
+        this.items.add(item);
     }
 
     public Usuario getCliente() {

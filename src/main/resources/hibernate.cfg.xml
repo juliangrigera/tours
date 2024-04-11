@@ -13,6 +13,7 @@
 
         <mapping class="edu.bbdd2.Usuario"></mapping>
         <mapping class="edu.bbdd2.Compra"></mapping>
+        <mapping class="edu.bbdd2.Item"></mapping>
 
     </session-factory>
 </hibernate-configuration>
